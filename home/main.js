@@ -1,1 +1,3 @@
-background(0)
+canvas.onscroll = () => {}
+
+background(250)
