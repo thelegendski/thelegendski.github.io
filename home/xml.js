@@ -5,7 +5,9 @@ xml.onreadystatechange = function(){
 xml.open("GET", "/home/main.xml", true)
 xml.send()
 
+const tag = (doc, tag) => doc.getElementsByTagName(tag)[0].childNodes[0].nodeValue
+
 const XMLHandler = xml => {
     const doc = xml.responseXML
-    println(doc.getElementsByTagName('test')[0].childNodes[0].nodeValue)
+    println(tag(xml, 'test'))
 }
