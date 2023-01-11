@@ -9,5 +9,5 @@ const tag = (doc, tag) => doc.getElementsByTagName(tag)[0].childNodes[0].nodeVal
 
 const XMLHandler = xml => {
     const doc = xml.responseXML
-    println(tag(xml, 'test'))
+    println(tag(doc, 'test'))
 }
